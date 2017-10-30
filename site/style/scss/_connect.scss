@@ -1,0 +1,92 @@
+.connect {
+  flex-grow: 1;
+
+  border: 1px solid $color-main;
+  border-left: 0;
+  position: relative;
+
+  @media(max-width: $width-lg) {
+    border: 1px solid $color-main;
+
+    padding-bottom: 110px;
+  }
+
+  &::after,
+  &::before {
+    content: "";
+    background-color: $color-button;
+    display: block;
+
+    position: absolute;
+  }
+
+  &::after {
+top: 0;
+left: 0;
+
+width: 103px;
+height: 99px;
+  }
+
+  &::before {
+right: 0;
+bottom: 0;
+
+width: 191px;
+height: 107px;
+  }
+
+  &-wrap {
+    margin: 0 20px 106px 118px;
+
+    display: flex;
+    justify-content: space-between;
+
+    @media(max-width: $width-lg) {
+      max-width: 604px;
+
+      margin: 0 auto 106px;
+    }
+
+    img {
+      @media(max-width: $width-lg) {
+      display: none;
+    }
+  }
+  }
+
+  &-title {
+    margin-top: 119px;
+
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &-description {
+    margin: 29px auto 57px;
+    max-width: 284px;
+  }
+
+  &-field {
+    border: 0;
+    border-bottom: 1px solid $color-main;
+    padding-bottom: 12px;
+    width: 226px;
+    display: block;
+    margin: 0 auto 64px;
+    }
+
+  &-button {
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 1px solid $color-main;
+
+    text-transform: uppercase;
+
+    width: 176px;
+    height: 50px;
+    display: block;
+
+    margin: 0 auto;
+  }
+}
