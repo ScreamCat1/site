@@ -3,11 +3,11 @@
   justify-content: space-between;
   align-items: flex-end;
 
-  margin: 0 20px  0 121px;
+  margin: 0 20px 0 121px;
 
   @media(max-width: $width-lg) {
     margin-left: 20px;
-  }
+    }
 
   &::after {
     content: "";
@@ -15,9 +15,13 @@
     border-bottom: 1px solid $color-main;
     margin-left: 46px;
     flex-grow: 1;
-  }
+
+    @media(max-width: $width-m) {
+      display: none;
+      }
+    }
 
   &-title {
     text-transform: uppercase;
+    }
   }
-}

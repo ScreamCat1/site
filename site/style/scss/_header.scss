@@ -1,7 +1,10 @@
 .header {
-  display:flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
+
+  max-width: 1200px;
+  margin: 0 auto;
 
   &-logo {
     padding: 20px 0 0 28px;
@@ -10,7 +13,7 @@
     width: 56px;
     display: block;
     background: url(../images/logo.png) 100% 100% no-repeat;
-  }
+    }
 
   &-search {
     padding-top: 29px;
@@ -19,8 +22,12 @@
 
     @media(max-width: $width-lg) {
       width: 415px;
+      }
+
+    @media(max-width: $width-m) {
+      width: 27px;
+      }
     }
-  }
 
   &-basket {
     font-size: 13px;
@@ -29,7 +36,7 @@
     text-transform: uppercase;
 
     @media(max-width: $width-lg) {
-    padding-left: 0;
+      padding-left: 0;
+      }
     }
   }
-}

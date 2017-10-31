@@ -6,13 +6,17 @@
     position: absolute;
     top: 0;
     left: 0;
-  }
+    }
 
   &-field {
-    border:0;
+    border: 0;
     border-bottom: 1px solid $color-main;
     width: inherit;
-  }
+
+    @media(max-width: $width-m) {
+      display: none;
+      }
+    }
 
   &-description {
     padding-top: 21px;
@@ -24,5 +28,9 @@
     top: 0;
 
     text-transform: uppercase;
+
+    @media(max-width: $width-m) {
+      display: none;
+      }
+    }
   }
-}

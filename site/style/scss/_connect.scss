@@ -9,7 +9,7 @@
     border: 1px solid $color-main;
 
     padding-bottom: 110px;
-  }
+    }
 
   &::after,
   &::before {
@@ -18,23 +18,23 @@
     display: block;
 
     position: absolute;
-  }
+    }
 
   &::after {
-top: 0;
-left: 0;
+    top: 0;
+    left: 0;
 
-width: 103px;
-height: 99px;
-  }
+    width: 103px;
+    height: 99px;
+    }
 
   &::before {
-right: 0;
-bottom: 0;
+    right: 0;
+    bottom: 0;
 
-width: 191px;
-height: 107px;
-  }
+    width: 191px;
+    height: 107px;
+    }
 
   &-wrap {
     margin: 0 20px 106px 118px;
@@ -46,26 +46,26 @@ height: 107px;
       max-width: 604px;
 
       margin: 0 auto 106px;
-    }
+      }
 
     img {
       @media(max-width: $width-lg) {
-      display: none;
+        display: none;
+        }
+      }
     }
-  }
-  }
 
   &-title {
     margin-top: 119px;
 
     text-align: center;
     text-transform: uppercase;
-  }
+    }
 
   &-description {
     margin: 29px auto 57px;
     max-width: 284px;
-  }
+    }
 
   &-field {
     border: 0;
@@ -88,5 +88,5 @@ height: 107px;
     display: block;
 
     margin: 0 auto;
+    }
   }
-}

@@ -2,24 +2,32 @@ body {
   color: $color-main;
   font-family: GothamLight;
   font-size: 11px;
-  max-width: 1200px;
   margin: 0 auto;
-}
+
+  @media(max-width: $width-m) {
+    position: relative;
+    }
+  }
 
 h1 {
   font-family: GothaProMed;
   font-size: 25px;
   letter-spacing: 2.24%;
-}
+  }
 
 h2 {
   font-size: 15px;
-}
+  }
 
 h3 {
   font-family: GothaProMed;
   font-size: 13px;
-}
+  }
+
+.main {
+  max-width:1200px;
+  margin: 0 auto;
+  }
 
 .show-more-button {
   margin-top: 20px;
@@ -36,7 +44,19 @@ h3 {
   text-decoration: none;
   color: inherit;
 
+  @media(max-width: $width-m) {
+    display: none;
+    }
+
   &__small {
     height: 110px;
+    }
+
+  &__mob {
+    display: none;
+
+    @media(max-width: $width-m) {
+      display: flex;
+      }
+    }
   }
-}

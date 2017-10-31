@@ -4,7 +4,7 @@
 
     display: flex;
     justify-content: space-between;
-  }
+    }
 
   &-left-side {
     flex-basis: 118px;
@@ -12,17 +12,22 @@
     @media(max-width: $width-lg) {
       flex-basis: 208px;
       flex-shrink: 0;
-    }
-
+      }
 
     &__child {
       flex-basis: 217px;
 
       @media(max-width: $width-lg) {
         flex-basis: 208px;
+        }
+      }
+
+    @media(max-width: $width-m) {
+      position: absolute;
+      right: 20px;
+      top: 24px;
       }
     }
-  }
 
   &-title {
     position: absolute;
@@ -33,7 +38,7 @@
     text-align: center;
     text-transform: uppercase;
     color: $color-title;
-  }
+    }
 
   &-description {
     text-align: center;
@@ -43,7 +48,7 @@
     top: 348px;
     left: 75px;
     z-index: 2;
-  }
+    }
 
   &-photo {
     position: absolute;
@@ -61,6 +66,12 @@
       min-width: 540px;
 
       margin-right: 27px;
+
+      @media(max-width: $width-m) {
+        margin-right: 0;
+        min-width: inherit;
+        height: 497px;
+        }
+      }
     }
   }
-}

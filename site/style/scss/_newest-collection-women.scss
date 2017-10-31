@@ -3,7 +3,13 @@
 
   @media(max-width: $width-lg) {
     margin-left: 208px;
-  }
+    }
+
+  @media(max-width: $width-m) {
+    margin: 78px 0 102px;
+
+    flex-direction: column;
+    }
 
   max-width: 1062px;
 
@@ -21,8 +27,15 @@
 
     @media(max-width: $width-lg) {
       margin-right: 13px;
+      }
+
+    @media(max-width: $width-m) {
+      margin-right: 0;
+      text-align: center;
+
+      width: 100%;
+      }
     }
-  }
 
   &-right-side {
     width: 373px;
@@ -30,22 +43,42 @@
     min-width: 256px;
 
     overflow: hidden;
+
+    @media(max-width: $width-m) {
+      width: 100%;
+      }
+    }
   }
-}
 
 .red {
-&-shoes {
-  &-wrap {
-    height: 387px;
+  &-shoes {
+    &-wrap {
+      height: 387px;
+
+      @media(max-width: $width-m) {
+        display: block;
+
+        margin-bottom: 20px;
+        }
+      }
+    }
+  &-dress {
+    height: 266px;
+
+    &-wrap {
+      @media(max-width: $width-m) {
+        text-align: center;
+        }
+      }
+    }
   }
-}
-&-dress {
-  height: 266px;
-}
-}
 
 .white-pullover {
   &-wrap {
     margin-top: 16px;
+
+    @media(max-width: $width-m) {
+      text-align: center;
+      }
+    }
   }
-}
