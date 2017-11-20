@@ -1,0 +1,65 @@
+body {
+  color: $color-main;
+  font-family: GothamLight;
+  font-size: 11px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: GothaProMed;
+  font-size: 25px;
+  letter-spacing: 2.24%;
+}
+
+h2 {
+  font-size: 15px;
+}
+
+h3 {
+  font-family: GothaProMed;
+  font-size: 13px;
+}
+
+button {
+  cursor: pointer;
+}
+
+input {
+  outline: none;
+
+  &:focus {
+    border-bottom: 2px solid $color-title;
+  }
+
+  font-weight: bold;
+  color:  $color-title;
+}
+
+.show-more-button {
+  margin-top: 20px;
+  display: flex;
+  background-color: $color-button;
+  border: 0;
+  height: 142px;
+  width: 100%;
+
+  justify-content: center;
+  align-items: center;
+
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+    color: $color-link-active;
+
+    background-color: $color-title;
+
+    transition: all .5s ease-out;
+  }
+
+  &__small {
+    height: 110px;
+  }
+}

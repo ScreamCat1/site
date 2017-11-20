@@ -1,0 +1,109 @@
+.header {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &-logo {
+    padding: 20px 0 0 28px;
+
+    height: 50px;
+    width: 56px;
+    display: block;
+    background: url(../images/logo.png) 100% 100% no-repeat;
+  }
+
+  &-search {
+    padding-top: 29px;
+    height: 26px;
+    width: 373px;
+
+    @media(max-width: $width-lg) {
+      width: 415px;
+    }
+  }
+
+  &-mobile {
+    display: none;
+
+    background-color: transparent;
+    border: 0;
+
+    @media(max-width: $width-sm) {
+      display: block;
+      width: 28px;
+      height: 23px;
+
+      margin-right: 22px;
+
+      outline: none;
+
+      background-image: url(../images/burger.svg);
+    }
+
+    &__active {
+      background-image: url(../images/close.svg);
+
+      height: 28px;
+    }
+  }
+
+  &-basket {
+    font-size: 13px;
+    color: $color-border-active;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: GothaProMed;
+
+    padding: 5px 22px 0 190px;
+
+    position: relative;
+
+      cursor: pointer;
+
+    @media(max-width: $width-lg) {
+    padding-left: 0;
+    }
+
+    &-icon {
+      display: none;
+
+      @media(max-width: $width-lg) {
+      display: block;
+      }
+    }
+
+    &-text {
+      @media(max-width: $width-lg) {
+      display: none;
+      }
+    }
+  }
+}
+
+.basket-count {
+  position: absolute;
+  top: -3px;
+  right: -3px;
+
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  display: flex;
+  background-color: $color-basket;
+
+  justify-content: center;
+  align-items: center;
+  color: $color-link-active;
+  font-size: 12px;
+  font-weight: normal;
+
+  @media(max-width: $width-lg) {
+    width: 19px;
+    height: 19px;
+
+    top: -1px;
+    right: 15px;
+
+    z-index: 2;
+  }
+}

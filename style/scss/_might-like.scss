@@ -1,0 +1,31 @@
+.might-like {
+  margin: 106px 0 106px 315px;
+
+  &-title {
+    display: flex;
+
+    color: $color-title;
+    font-family: GothaProMed;
+    text-transform: uppercase;
+
+    &::after {
+      display: block;
+      content: '';
+      flex-grow: 1;
+      margin-left: 25px;
+      border-bottom: 1px solid $color-main;
+    }
+  }
+
+  &-wrap {
+    margin-top: 50px;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-element {
+    width: 189px;
+    height: 244px;
+  }
+}
