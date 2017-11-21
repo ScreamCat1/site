@@ -1,16 +1,20 @@
 .footer {
-  padding: 51px 239px;
+  padding: 51px 20%;
   background-color: $color-button;
 
   display: flex;
   justify-content: space-between;
+
+  @media(max-width: $width-sm) {
+    padding: 51px 2%;
+  }
 
   &-section {
     display: flex;
     flex-direction: column;
     height: 33px;
     justify-content: space-between;
-    
+
 
     &-link {
       color: inherit;

@@ -1,14 +1,30 @@
 .newest-collection-women {
   margin: 78px 20px 102px 118px;
 
-  @media(max-width: $width-lg) {
-    margin-left: 208px;
-  }
-
   max-width: 1062px;
 
   display: flex;
   justify-content: space-between;
+
+  @media(max-width: $width-lg) {
+    margin-left: 208px;
+  }
+
+  @media(max-width: $width-sm) {
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  @media(max-width: 540px) {
+    flex-direction: column;
+
+    position: relative;
+
+    .show-more-button {
+      position: absolute;
+      bottom: -162px;
+    }
+  }
 
   &-left-side {
     width: 669px;
@@ -22,6 +38,13 @@
     @media(max-width: $width-lg) {
       margin-right: 13px;
     }
+
+    @media(max-width: $width-sm) {
+      margin-right: auto;
+      width: 100%;
+      margin-bottom: 20px;
+
+    }
   }
 
   &-right-side {
@@ -30,6 +53,12 @@
     min-width: 256px;
 
     overflow: hidden;
+
+    @media(max-width: $width-sm) {
+      width: 100%;
+      text-align: center;
+
+    }
   }
 }
 
@@ -37,6 +66,11 @@
 &-shoes {
   &-wrap {
     height: 387px;
+
+    @media(max-width: 540px) {
+      height: 364px;
+      margin-bottom: 20px;
+    }
   }
 }
 &-dress {

@@ -12,6 +12,10 @@
     border:0;
     border-bottom: 1px solid $color-main;
     width: inherit;
+
+    @media(max-width: $width-sm) {
+      display: none;
+    }
   }
 
   &-description {
@@ -24,5 +28,9 @@
     top: 0;
 
     text-transform: uppercase;
+
+    @media(max-width: $width-sm) {
+      display: none;
+    }
   }
 }

@@ -20,6 +20,10 @@
     @media(max-width: $width-lg) {
       width: 415px;
     }
+
+    @media(max-width: $width-sm) {
+      width: 28px;
+    }
   }
 
   &-mobile {
