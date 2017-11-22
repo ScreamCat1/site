@@ -1,13 +1,16 @@
 .might-like {
-  margin: 106px 0 106px 315px;
-
+  margin: 106px 20px 106px auto;
+  
   &-title {
     display: flex;
-
+    
     color: $color-title;
     font-family: GothaProMed;
     text-transform: uppercase;
 
+    justify-content: flex-end;
+    padding-left: 20px;
+    
     &::after {
       display: block;
       content: '';
@@ -16,16 +19,44 @@
       border-bottom: 1px solid $color-main;
     }
   }
-
+  
   &-wrap {
     margin-top: 50px;
-
+    
     display: flex;
-    justify-content: space-between;
-  }
+    justify-content: flex-end;
 
+    @media(max-width: $width-lg) {
+      margin-left: 20px;
+
+      justify-content: space-between
+    }
+
+    @media(max-width: 850px) {
+      flex-wrap: wrap;
+    }
+
+    @media(max-width: 450px) {
+      margin-right: 20px;
+
+      align-items: center;
+
+      flex-direction: column;
+    }
+    
+  }
+  
   &-element {
     width: 189px;
     height: 244px;
+    margin-left: 55px;
+
+    @media(max-width: $width-lg) {
+      margin-left: 0;
+    }
+
+    @media(max-width: 850px) {
+      margin-top: 50px;
+    }
   }
 }

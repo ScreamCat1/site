@@ -1,150 +1,199 @@
 .product {
   flex-basis: 885px;
 
+  @media(max-width: $width-lg) {
+    width: calc(100% - 208px);
+  }
+
+  @media(max-width: 850px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
   display: flex;
-
+  
   justify-content: space-between;
-
+  
   &-image {
-
-
+    
+    
     &-wrap {
       width: 373px;
-    }
 
+      @media(max-width: 450px) {
+        width: calc(100% - 40px);
+        margin: 0 20px;
+        
+        overflow: hidden;
+      }
+    }
+    
     &-slider {
       margin-top: 19px;
-
+      
       display: flex;
-
+      
       justify-content: space-between;
     }
   }
-
+  
   &-description {
-
+    
     &-wrap {
       border-top: 1px solid $color-main;
-
+      
       flex-grow: 1;
+      
+      @media(max-width: 850px) {
+        margin-top: 50px;
+      }
     }
   }
-
+  
   &-title {
-    margin: 34px auto 20px 119px;
+    margin: 34px auto 20px 23.24%;
 
+    @media(max-width: 910px) {
+      margin-left: 0;
+
+      text-align: center
+    }
+    
     color: $color-title;
     text-transform: uppercase;
   }
-
+  
   &-text{
     font-family: GothaProMed;
-    margin-left: 119px;
-
+    margin-left: 23.24%;
+    
     color: $color-title;
     text-transform: uppercase;
     font-weight: bold;
-  }
 
+    @media(max-width: 910px) {
+      margin-left: 0;
+
+      text-align: center;
+    }
+  }
+  
   &-size {
     margin-top: 82px;
-
+    
     &-wrap {
-      margin-left: 119px;
+      margin-left: 23.24%;
       margin-top: 20px;
-
+      
       display: flex;
       justify-content: flex-start;
-    }
 
+      @media(max-width: 910px) {
+        margin-left: 0;
+
+        justify-content: center;
+      }
+    }
+    
     &-icon {
       display: flex;
       justify-content: center;
       align-items: center;
-
+      
       text-decoration: none;
       text-transform: uppercase;
       font-size: 13px;
       color: $color-main;
-
+      
       margin:0 19px 0 0;
-
+      
       box-sizing: border-box;
       border: 1px solid $color-main;
-
+      
       width: 42px;
       height: 42px;
-
+      
       &:hover {
         background-color: $color-main;
-
+        
         color: $color-link-active;
       }
     }
   }
-
+  
   &-color {
     margin-top: 40px;
-
+    
     &-element {
       border-radius: 50%;
-
+      
       width: 42px;
       height: 42px;
-
+      
       display: block;
-
+      
       box-sizing: border-box;
-
+      
       background-color: grey;
       border: 2px solid grey;
-
+      
       margin-right: 19px;
-
+      
       &:hover {
         border: 2px solid $color-border-active;
         background-color: $color-main;
       }
     }
-
+    
     &-wrap {
       display: flex;
       justify-content: flex-start;
-
-      margin-left: 119px;
+      
+      margin-left: 23.24%;
       margin-top: 20px;
+
+      @media(max-width: 910px) {
+        margin-left: 0;
+
+        justify-content: center;
+      }
     }
   }
-
+  
   &-button {
     display: flex;
     margin-top: 77px;
-    margin-left: 119px;
+    margin-left: 23.24%;
     width: 176px;
     height: 50px;
-
+    
     justify-content: center;
     align-items: center;
-
+    
     background-color: transparent;
-
+    
     font-size: 10px;
     text-transform: uppercase;
-
+    
     box-sizing: border-box;
-
+    
     border: 1px solid $color-main;
-  }
 
+    @media(max-width: 910px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  
   &-link {
     position: relative;
     color: inherit;
-
+    
     display: block;
     box-sizing: border-box;
-
+    
     overflow: hidden;
-
+    
     &:hover {
       &::after {
         display: block;
@@ -156,54 +205,54 @@
         bottom: 0;
         border: 1px solid rgba(0,0,0,  .7);
       }
-
+      
     }
-
-
+    
+    
   }
-
+  
   &-area-title {
     position: absolute;
-
+    
     font-weight: bold;
     text-transform: uppercase;
     font-size: 13px;
     color: $color-title;
     font-family: GothaProMed;
-
+    
     &__left {
       left: 20%;
     }
-
+    
     &__bottom {
       bottom: 27.6%;
     }
     &__right {
       left: 59%;
     }
-
+    
     &__top {
       top: 20%;
     }
   }
-
+  
   &-price {
     position: absolute;
-
+    
     text-transform: uppercase;
-
+    
     &__left {
       left: 20%;
     }
-
+    
     &__right {
       left: 59%;
     }
-
+    
     &__bottom {
       bottom: 22%;
     }
-
+    
     &__top {
       top: 30%;
     }

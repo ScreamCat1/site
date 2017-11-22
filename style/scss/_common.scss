@@ -27,11 +27,11 @@ button {
 
 input {
   outline: none;
-
+  
   &:focus {
     border-bottom: 2px solid $color-title;
   }
-
+  
   font-weight: bold;
   color:  $color-title;
 }
@@ -43,22 +43,22 @@ input {
   border: 0;
   height: 142px;
   width: 100%;
-
+  
   justify-content: center;
   align-items: center;
-
+  
   text-transform: uppercase;
   text-decoration: none;
   color: inherit;
-
+  
   &:hover {
     color: $color-link-active;
-
+    
     background-color: $color-title;
-
+    
     transition: all .5s ease-out;
   }
-
+  
   &__small {
     height: 110px;
   }

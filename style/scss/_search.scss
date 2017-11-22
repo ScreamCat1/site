@@ -1,34 +1,34 @@
 .search {
   position: relative;
-
+  
   &-icon {
     padding-top: 21px;
     position: absolute;
     top: 0;
     left: 0;
   }
-
+  
   &-field {
     border:0;
     border-bottom: 1px solid $color-main;
     width: inherit;
-
+    
     @media(max-width: $width-sm) {
       display: none;
     }
   }
-
+  
   &-description {
     padding-top: 21px;
     border: none;
     background-color: transparent;
-
+    
     position: absolute;
     right: 0;
     top: 0;
-
+    
     text-transform: uppercase;
-
+    
     @media(max-width: $width-sm) {
       display: none;
     }

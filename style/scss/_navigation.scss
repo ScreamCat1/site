@@ -1,52 +1,57 @@
 .navigation {
   color: $color-title;
   &-wrap {
-  padding: 20px 0 0 20px;
+    padding: 20px 0 0 20px;
   }
-
+  
   &-item {
-
+    
     margin-bottom: 25px;
-
+    
     &__first {
       margin-bottom: 50px;
     }
-
+    
     &__last {
       margin-top: 50px;
     }
-
+    
   }
-
+  
   &-link {
     color :inherit;
     text-decoration: none;
     text-transform: uppercase;
-
+    font-weight: bold;
+    
     &:hover {
-      font-weight: bold;
+      color: $color-border-active;
     }
-
+    
     &__active {
       color: $color-border-active;
     }
   }
-
+  
   &-sub-menu {
-
+    
     &__active {
       display: block;
     }
-
+    
     &-item {
       margin-top: 24px;
     }
-
+    
     &-link {
       font-size: 13px;
       color: inherit;
       text-decoration: none;
       text-transform: uppercase;
+
+      &:hover {
+        color: $color-border-active;
+      }
     }
   }
 }
