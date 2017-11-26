@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="./style/scss/main.css">
-  
+  <link rel="stylesheet" href="./style/main.css">
+
   <title>Item</title>
 </head>
 <body>
@@ -15,8 +15,6 @@
     <div class="header-search search">
       <span class="search-icon">
         <svg width="17" height="15" viewBox="0 0 17 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-          <title>Vector</title>
-          <desc>Created using Figma</desc>
           <g id="Canvas" transform="translate(11241 -9077)">
             <g id="Vector">
               <use xlink:href="#path0_fill" transform="translate(-11241 9077)" fill="#2B2B2B"/>
@@ -31,9 +29,31 @@
       <button class="search-description">поиск</button>
     </div>
     <div class="header-basket">
-      Корзина
-      <span class="basket-count"></span>
+      <span class="header-basket-text">Корзина</span>
+      <svg width="39" height="35"  class="header-basket-icon" viewBox="0 0 39 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <g id="Canvas1" transform="translate(5621 -9401)">
+          <g id="Group1">
+            <g id="Vector1">
+              <use xlink:href="#path0_fill1" transform="translate(-5621 9401)" fill="#2B2B2B"/>
+            </g>
+            <g id="Vector">
+              <use xlink:href="#path1_fill1" transform="translate(-5597.43 9429.41)" fill="#2B2B2B"/>
+            </g>
+            <g id="Vector">
+              <use xlink:href="#path2_fill1" transform="translate(-5610.21 9429.41)" fill="#2B2B2B"/>
+            </g>
+          </g>
+        </g>
+        <defs>
+          <path id="path0_fill1" d="M 11.9467 20.7107L 34.9329 20.7107L 39 6.97885L 33.0147 6.97885L 30.8657 0.700108L 21.9037 3.44801L 23.1294 6.97885L 22.7076 6.97885L 20.4949 0.700108L 11.5329 3.44801L 12.7585 6.97885L 7.96712 6.97885L 6.97225 3.21462C 6.4708 1.3325 4.7357 -2.34413e-08 2.73793 -2.34413e-08L 0 -2.34413e-08L 0 1.57342L 2.73793 1.57342C 3.97955 1.57342 5.06199 2.35637 5.39631 3.53837L 9.79775 19.8299C 8.8904 20.4472 8.29347 21.456 8.29347 22.6079C 8.29347 24.49 9.95692 26.0635 11.9467 26.0635L 34.3519 26.0635L 34.3519 24.49L 11.9467 24.49C 10.8643 24.49 9.95692 23.6243 9.95692 22.6079C 9.95698 21.5765 10.8722 20.7107 11.9467 20.7107ZM 29.7913 2.65753L 31.2876 6.89607L 24.8168 6.89607L 23.9015 4.4644L 29.7913 2.65753ZM 19.4204 2.65753L 20.9167 6.89607L 14.4459 6.89607L 13.5306 4.4644L 19.4204 2.65753ZM 36.8431 8.46949L 33.6913 19.1449L 11.2861 19.1449L 8.38099 8.46955L 36.8431 8.46949Z"/>
+          <path id="path1_fill1" d="M 3.48612 -6.03039e-07C 1.57593 -6.03039e-07 -1.08849e-07 1.49065 -1.08849e-07 3.29745C -1.08849e-07 5.10426 1.57593 6.5949 3.48612 6.5949C 5.47593 6.5949 6.97224 5.10426 6.97224 3.29745C 6.97231 1.49065 5.39638 -6.03039e-07 3.48612 -6.03039e-07ZM 3.48612 5.10426C 2.40368 5.10426 1.57593 4.23848 1.57593 3.29745C 1.57593 2.27359 2.49125 1.49064 3.48612 1.49064C 4.56857 1.49064 5.39631 2.27359 5.39631 3.29745C 5.39638 4.32132 4.48106 5.10426 3.48612 5.10426Z"/>
+          <path id="path2_fill1" d="M 3.48612 -6.03039e-07C 1.57593 -6.03039e-07 2.56572e-07 1.49065 2.56572e-07 3.29745C 2.56572e-07 5.10426 1.57593 6.5949 3.48612 6.5949C 5.39631 6.5949 6.97225 5.10426 6.97225 3.29745C 6.97225 1.49065 5.39631 -6.03039e-07 3.48612 -6.03039e-07ZM 3.48612 5.10426C 2.40368 5.10426 1.57593 4.23848 1.57593 3.29745C 1.57593 2.27359 2.49125 1.49064 3.48612 1.49064C 4.48099 1.49064 5.39631 2.27359 5.39631 3.29745C 5.39631 4.32132 4.48099 5.10426 3.48612 5.10426Z"/>
+        </defs>
+      </svg>
+      <span class="basket-count">2</span>
     </div>
+    <button class="header-mobile">
+    </button>
   </header>
   <main class="main">
     <section class="present-wrap">
@@ -187,6 +207,10 @@
         </a>
       </div>
     </footer>
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+    crossorigin="anonymous"></script>
+    <script src="./js/scripts.js"></script>
   </body>
   </html>
-  
