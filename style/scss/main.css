@@ -42,6 +42,102 @@ img {
   object-fit: cover;
 }
 
+.basket-wrap {
+  position: absolute;
+  top: -400px;
+  right: 18px;
+  height: 393px;
+  width: 333px;
+  border: 1px solid #4f4f4f;
+  box-sizing: border-box;
+  padding: 40px;
+}
+
+.basket-wrap::after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  content: '';
+  display: block;
+  background-color: #F9F8F6;
+  width: 51px;
+  height: 83px;
+}
+
+.basket-wrap::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  display: block;
+  background-color: #F9F8F6;
+  width: 77px;
+  height: 54px;
+}
+
+.basket-wrap__active {
+  top: 134px;
+}
+
+.basket-title {
+  margin-top: 40px;
+  margin: 40px 0 23px;
+  position: relative;
+  z-index: 2;
+  font-family: GothaProMed;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.basket-item-count {
+  font-family: GothaProMed;
+  font-size: 15px;
+}
+
+.basket-summary {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.basket-all {
+  font-family: GothaProMed;
+  font-size: 15px;
+  text-transform: capitalize;
+}
+
+.basket-price {
+  font-family: GothaProMed;
+  font-size: 20px;
+}
+
+.basket-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #2b2b2b;
+  width: 176px;
+  height: 50px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  text-decoration: none;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #2b2b2b;
+  font-weight: bold;
+  transition: all .5s ease-out;
+}
+
+.basket-link:hover {
+  background-color: #2b2b2b;
+  color: #fff;
+}
+
+.basket-line {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
 @font-face {
   font-family: GothamLight;
   src: url(../fonts/GothaProLig.otf);
@@ -481,10 +577,22 @@ input:focus {
   flex-wrap: wrap;
 }
 
+@media (max-width: 768px) {
+  .product-collection {
+    justify-content: center;
+  }
+}
+
 .product-collection-wrap {
   flex-basis: 962px;
   margin-right: 18px;
   margin-bottom: 107px;
+}
+
+@media (max-width: 768px) {
+  .product-collection-wrap {
+    margin-left: 18px;
+  }
 }
 
 .product-collection-header {
@@ -528,6 +636,12 @@ input:focus {
   display: flex;
   justify-content: flex-end;
   margin-top: 50px;
+}
+
+@media (max-width: 480px) {
+  .product-collection-pagination {
+    justify-content: center;
+  }
 }
 
 .product-collection-pagination-item {
