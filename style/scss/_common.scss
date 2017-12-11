@@ -63,3 +63,10 @@ input {
     height: 110px;
   }
 }
+
+.main {
+  &__basket {
+    display: flex;
+    justify-content: flex-start;
+  }
+}

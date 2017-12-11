@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   
-  <link rel="stylesheet" href="./style/main.css">
+  <link rel="stylesheet" href="./style/scss/main.css">
   <title>Document</title>
 </head>
 <body>
@@ -55,7 +55,7 @@
     <button class="header-mobile">
     </button>
   </header>
-  <main class="main">
+  <main class="main main__basket">
     <article class="present-wrap">
       <section class="present-left-side">
         <nav class="navigation-wrap">
@@ -87,6 +87,47 @@
             </li>
           </ul>
         </nav>
+      </section>
+    </article>
+    <article class="basket-content">
+      <div class="basket-title-wrap">
+        <h1 class="basket-title">
+          ваша корзина 
+        </h1>
+        <span class="basket-title-count">
+          <span class="basket-count-value">3</span> товара
+        </span>
+        <a href="index.html" class="basket-link">продолжить покупки</a>
+      </div>
+      <section class="item-list"> 
+        <div class="item">
+          <img src="../../images/price/item.png" alt="" class="item-img">
+          <div class="item-wrap">
+            <p class="item-field item-field__title">
+              <span>
+                брюки roxy
+              </span>
+              <span>1 шт x <span class="item-summaru">800</span> руб</span>
+            </p>
+            <p class="item-field item-field__params">
+              Размер: <span class="item-param item-param__size">L</span>
+            </p>
+            <p class="item-field item-field__params">
+              Цвет: <span class="item-param item-param__color">white</span>
+            </p>
+            <p class="item-field">
+              Количество: 
+              <div class="count-wrap">
+                <button class="count-less">-</button>
+                <span class="count-value">1</span>
+                <button class="count more">+</button>
+              </div>
+              <span class="item-delete">
+                удалить
+              </span>
+            </p>
+          </div>
+        </div>
       </section>
     </article>
   </main>

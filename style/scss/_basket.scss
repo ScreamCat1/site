@@ -1,113 +1,146 @@
-.basket {
-  &-wrap {
-    position: absolute;
+// .basket {
+//   &-wrap {
+//     position: absolute;
 
-    top: -400px;
-    right: 18px; 
+//     top: -400px;
+//     right: 18px; 
     
-    height: 393px;
-    width: 333px;
-    border: 1px solid $color-main;
-    box-sizing: border-box;
-    padding: 40px;
+//     height: 393px;
+//     width: 333px;
+//     border: 1px solid $color-main;
+//     box-sizing: border-box;
+//     padding: 40px;
     
 
-    &::after {
-      position: absolute;
-      bottom: 0;
-      right: 0;
+//     &::after {
+//       position: absolute;
+//       bottom: 0;
+//       right: 0;
 
-      content: '';
-      display: block;
-      background-color: $color-button;
+//       content: '';
+//       display: block;
+//       background-color: $color-button;
 
-      width: 51px;
-      height: 83px
-    }
+//       width: 51px;
+//       height: 83px
+//     }
 
-    &::before {
-      position: absolute;
-      top: 0;
-      left: 0;
+//     &::before {
+//       position: absolute;
+//       top: 0;
+//       left: 0;
 
-      content: '';
-      display: block;
-      background-color: $color-button;
+//       content: '';
+//       display: block;
+//       background-color: $color-button;
 
-      width: 77px;
-      height: 54px
-    }
+//       width: 77px;
+//       height: 54px
+//     }
 
-    &__active {
-      top: 134px;
+//     &__active {
+//       top: 134px;
   
-    }
+//     }
+//   }
+
+//   &-title {
+//     margin-top: 40px;
+//     margin: 40px 0 23px;
+//     position: relative;
+//     z-index: 2;
+
+//     font-family: GothaProMed;
+//     font-size: 20px;
+//     text-transform: uppercase;
+//   }
+
+//   &-item-count {
+//     font-family: GothaProMed;
+//     font-size: 15px;
+//   }
+
+//   &-summary {
+//     display: flex;
+//     justify-content: space-between;
+//     margin-bottom: 20px;
+//   }
+
+//   &-all {
+//     font-family: GothaProMed;
+//     font-size: 15px;
+//     text-transform: capitalize;
+//   }
+
+//   &-price {
+//     font-family: GothaProMed;
+//     font-size: 20px;
+//   }
+
+//   &-link {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+    
+//     border: 1px solid $color-title;
+
+//     width: 176px;
+//     height: 50px;
+//     box-sizing: border-box;
+
+//     margin: 0 auto;
+
+//     text-decoration: none;
+//     font-size: 10px;
+//     text-transform: uppercase;
+//     color: $color-title;
+//     font-weight: bold;
+
+//     transition: all .5s ease-out;
+
+//     &:hover {
+//       background-color: $color-title;
+//       color: #fff;
+//     }
+//   }
+
+//   &-line {
+//     margin-top: 60px;
+//     margin-bottom: 60px;
+//   }
+
+
+// }
+
+.basket {
+  &-content {
+    flex-basis: 568px;
+    margin-left: 22px;
+    margin-top: 63px;
   }
 
   &-title {
-    margin-top: 40px;
-    margin: 40px 0 23px;
-    position: relative;
-    z-index: 2;
-
-    font-family: GothaProMed;
-    font-size: 20px;
-    text-transform: uppercase;
-  }
-
-  &-item-count {
-    font-family: GothaProMed;
-    font-size: 15px;
-  }
-
-  &-summary {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-  }
-
-  &-all {
-    font-family: GothaProMed;
-    font-size: 15px;
-    text-transform: capitalize;
-  }
-
-  &-price {
-    font-family: GothaProMed;
-    font-size: 20px;
-  }
-
-  &-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    border: 1px solid $color-title;
-
-    width: 176px;
-    height: 50px;
-    box-sizing: border-box;
-
-    margin: 0 auto;
-
-    text-decoration: none;
-    font-size: 10px;
+    font-weight: bold;
     text-transform: uppercase;
     color: $color-title;
-    font-weight: bold;
+    
+    &-count {
+        font-size: 15px;
+        margin-left: 15px;
+        text-transform: uppercase;
+        margin-right: auto;
+    }
 
-    transition: all .5s ease-out;
-
-    &:hover {
-      background-color: $color-title;
-      color: #fff;
+    &-wrap {
+      display: flex;
+      align-items: baseline;
+      align-items: baseline;
     }
   }
 
-  &-line {
-    margin-top: 60px;
-    margin-bottom: 60px;
+  &-link {
+    text-decoration: none;
+    color: inherit;
   }
-
 
 }
