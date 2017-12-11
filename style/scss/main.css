@@ -1274,6 +1274,7 @@ input:focus {
 
 .item-field__params {
   font-weight: bold;
+  font-size: 13px;
   margin-bottom: 20px;
 }
 
@@ -1281,6 +1282,47 @@ input:focus {
   font-weight: normal;
   margin-left: 7px;
   margin-right: auto;
+}
+
+.item-field__count {
+  font-size: 13px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-delete {
+  font-weight: normal;
+  font-size: 10px;
+  border: none;
+  background: inherit;
+  outline: none;
+}
+
+.count-wrap {
+  display: flex;
+  align-items: center;
+  margin-left: 9px;
+  margin-right: auto;
+}
+
+.count-btn {
+  background: inherit;
+  border: 1px solid #CFCCCC;
+  color: #CFCCCC;
+  width: 23px;
+  height: 23px;
+  outline: none;
+}
+
+.count-btn:hover {
+  border-color: #E79043;
+  color: #E79043;
+}
+
+.count-value {
+  margin: 0 15px;
 }
  
 

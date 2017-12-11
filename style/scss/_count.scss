@@ -1,0 +1,26 @@
+.count {
+    &-wrap {
+        display: flex;
+        align-items: center;
+        margin-left: 9px;
+        margin-right: auto;
+    }
+
+    &-btn {
+        background: inherit;
+        border: 1px solid $color-pagination;
+        color: $color-pagination;
+        width: 23px;
+        height: 23px;
+        outline: none;
+
+        &:hover {
+            border-color: $color-border-active;
+            color: $color-border-active;
+        }
+    }
+
+    &-value {
+        margin: 0 15px;
+    }
+}
